@@ -1,0 +1,16 @@
+header > .div_logo{
+    position: relative;
+    height: auto;
+    width: 120px;
+}
+header > .div_logo > .logo{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+}
+
+header > .div_logo > .logo > img{
+    position: relative;
+    width: 100%;
+}
