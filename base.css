@@ -1,0 +1,115 @@
+:root{
+    --primary-color: linear-gradient(#322f2f , #6e6767);
+    --text-color: red;
+    --border-color: #dbdbdb;
+
+    --header-height: 130px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height))
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+.grid{
+    width: 1680px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+      
+}
+
+@keyframes growth {
+    from{
+        transform: scale(var(C));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+/* modal */
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.modal_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.3);
+    animation: fadeIn linear 0.1s;
+}
+
+.modal_body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+}
+
+
+/* Button style */
+.btn{
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.btn.btn--normal:hover{
+    background-color: rgba( 0, 0, 0, 0.2);
+}
+
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.btn.btn--primary{
+    background-color: rgb(15, 13, 116);
+    color: white;
+}
+
+.btn.btn--disabled{
+    color: #ccc;
+    cursor: default;
+    filter: #999;
+}
+
