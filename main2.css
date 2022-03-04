@@ -111,6 +111,11 @@
 
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /* authen modal */
 
 .auth-form{
